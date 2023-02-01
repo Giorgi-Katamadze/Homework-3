@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUSIC FESTIVAL</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,300;0,500;1,200&family=Peralta&display=swap" rel="stylesheet">
+
+</head>
+<body>
+        <ul>
+            <li>
+                <a href="./index.html">
+                    Home
+                </a>
+            </li>
+            <li>
+                <a href="./blog.htm">
+                    Blog
+                </a>
+            </li>
+            <li>
+                <a href="./contact.html">
+                    Contact
+                </a>
+            </li>
+        </ul>
+
+    <h1 id="title">
+        Music Festival
+    </h1>
+    <p id="description">
+        please fill in the form bellow, we will contact you as soon as possible
+    </p>
+    <form id="survey-form">
+        <section>
+            <label for="first-name">
+                First Name:
+            </label>
+            <input type="text" id="first-name" placeholder="First Name" required>
+            <label for="last-name">
+                Last Name:
+            </label>
+            <input type="text" id="last-name" placeholder="Last Name" required>
+            <label for="email">
+                Enter your email:
+            </label>
+            <input type="email" id="email" placeholder="Email" required>
+            <label for="age">
+                Enter your age:
+            </label>
+            <input type="number" id="age" min="16" max="100" placeholder="age" required>
+        </section>  
+        
+        <label for="dropdown">
+            Select musical genre:
+        </label>
+        <select id="dropdown">
+            <option>(select option)</option>
+            <option>Rock</option>
+            <option>Pop music</option>
+            <option>Hip-hop</option>
+            <option>Jazz</option>
+            <option>Country music</option>
+            <option>Blues</option>
+            <option>Other</option>
+        </select>
+        </section>
+        <section>
+        <label>
+            why are you comming to festival?
+        </label>
+      <label for="listen">
+        <input type="radio" id="listen" name="listen-perform" value="listen" required> 
+        To listen
+    </label>
+      <label for="perform">
+        <input type="radio" name="listen-perform" id="perform" value="perform" required> 
+        To perform 
+    </label>
+
+      <label for="terms-and-conditions" class="Ag">
+        <input type="checkbox" id="terms-and-conditions" required>
+        I agree to <a href="anywhere.com">
+            terms and conditions
+        </a>
+    </label>
+      <section>
+      
+      
+    
+    </section>
+    <button type="submit" id="submit">submit</button>
+    </form>
+
+    <style>
+            body{
+                background-image:url("./image/456.jpeg");
+                background-size:cover;
+                color: white;
+                padding: 1rem;
+                font-family: Open Sans;
+            }
+            
+            h1{
+                text-align: center;
+            }
+            p{
+                border-bottom: 1px solid white;
+                border-top: 1px solid white;
+                width:450px;
+                text-align:center;
+                margin: 5px auto;
+                padding: 2px;
+            }
+            
+            form{
+                background-color: rgb(238, 238, 238, 50%);
+                color: black;
+                width: 70%;
+                padding: 0 1em;
+                margin:5px auto;
+                border-radius: 1em;
+            }
+            
+            input, label, select{
+                display: block;
+                margin:5px;
+            }
+            
+            input[type="radio"], #terms-and-conditions{
+                vertical-align: middle;
+                display: inline;
+            
+            }
+            
+            a{
+                text-decoration: none;
+            }
+            
+            section{
+                border-bottom:1px solid black;
+                padding: 1em;
+            }
+            
+            
+            #submit {
+                width: 100px;
+                display: block;
+                margin: 10px auto;
+                padding: 5px;
+                font-family:Open Sans;
+                
+            }
+
+            ul{
+                display: flex;
+                justify-content: center;
+                gap:30px;
+                list-style: none;
+                font-family: Inter Tight;
+                font-size: 30px;
+            }
+            a{
+                color: white;
+                text-decoration: none;
+            }
+
+            a:visited{
+                color: antiquewhite;
+                text-decoration: none;
+            }
+
+            .Ag{
+                text-align: center;
+            }
+  
+    </style>
+</body>
+</html>
