@@ -8,52 +8,66 @@
     <title>Document</title>
 </head>
 <body>
-    <ul>
-        <li>
-            <a href="./index.html">
-                Home
-            </a>
-        </li>
-        <li>
-            <a href="./blog.htm">
-                Blog
-            </a>
-        </li>
-        <li>
-            <a href="./contact.html">
-                Contact
-            </a>
-        </li>
-    </ul>
+    <div class="all">
+        <div class="nav">
+            <ul>
+                <li>
+                    <a href="./index.html">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="./blog.htm">
+                        Blog
+                    </a>
+                </li>
+                <li>
+                    <a href="./contact.html">
+                        Contact
+                    </a>
+                </li>
+            </ul>
+        </div>
 
-    <div>
-        <label for="text">Name</label>
-        <input type="text" name="" id="text"  required>
+        <div class="blog">
+                <label for="text">
+                    Name
+                </label>
+                <input type="text" name="" id="text"  required>
 
-        <label for="file">Photo 3/4</label>
-        <input type="file" name="" id="file" required>
+                <label for="file">
+                    Photo 3/4
+                </label>
+                <input type="file" name="" id="file" required>
 
-        <label for="were">Tell something about yourself</label>
-        <textarea name="" id="were" cols="30" rows="10" placeholder="" required></textarea>
-    <button type="submit">
-            Submit
-    </button>
-    
-    </div>
+                <label for="were">
+                    Tell something about yourself
+                </label>
+                <textarea name="" id="were" cols="30" rows="10" placeholder="" required></textarea>
+                <button type="submit">
+                    Submit
+                </button>
+            
+        </div>
 
-   
+   </div>
 
 <style>
     body{
-        background-color: #B7B78A;
+       
         font-family: Inter Tight;
         font-size: 30px;
     }
     input, label, button{
         display: block;
-        margin-bottom: 5px;
-        
+        margin-bottom: 35px;
         }
+
+
+    input{
+        height: 25px;
+        width: 40%;
+    }
 
     button{
         width: 20%;
@@ -61,26 +75,44 @@
         margin: auto;
         
     }
-    textarea{
-        width: 70%;
+
+    button:hover{
+        background-color: #567189;
     }
 
-    div{
+    textarea{
+        width: 100%;
+    }
+
+    .all{
+        display: flex;
         background-color:#DDDDDD;
-        padding: 2em;
         margin: auto;
-        width: 40%;
         opacity: 70%;
     }
 
+    .nav{
+        background-color: black;
+        height: 1000px;
+        width: 15%;
+
+    }
+
+    .blog{
+        padding: 2em;
+        width: 70%;
+    }
+
     ul{
-        display: flex;
-        justify-content: center;
-        gap:30px;
         list-style: none;
         font-family: Inter Tight;
-        font-size: 50px;
+        font-size: 30px;
         }
+
+    li{
+        margin-bottom: 100px;
+        margin-top: 60px;
+    }
     a{
         color: white;
         text-decoration: none;
